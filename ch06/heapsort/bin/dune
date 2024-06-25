@@ -1,0 +1,4 @@
+(executable
+ (public_name heapsort)
+ (name main)
+ (libraries core heapsort))
