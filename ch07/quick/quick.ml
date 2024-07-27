@@ -1,7 +1,7 @@
 let partition arr =
-  let x = List.rev arr |> List.hd in
-  let nl_less = List.filter (fun t -> t < x) arr in
-  let nl_larger = List.filter (fun t -> t > x) arr in
+  let x, tla = (List.rev arr |> List.hd), (arr |> List.rev |> List.tl |> List.rev) in
+  let nl_less = List.filter (fun t -> t <= x) tla in
+  let nl_larger = List.filter (fun t -> t > x) tla in
   nl_less, x, nl_larger
 
 let rec quicksort arr =
@@ -14,4 +14,4 @@ let rec quicksort arr =
   else
     arr
 
-let _ = quicksort [2; 8; 7; 1; 3; 5; 6; 4] |> List.iter (Printf.printf "%d\t") 
+let _ = quicksort [2; 8; 7; 1; 4; 3; 5; 6; 4] |> List.iter (Printf.printf "%d\t"); print_newline ()
