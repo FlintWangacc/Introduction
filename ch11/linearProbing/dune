@@ -1,0 +1,8 @@
+(library
+ (name linearProbing)
+ (modules linearProbing))
+
+(executable
+ (name test)
+ (modules test)
+ (libraries linearProbing))
