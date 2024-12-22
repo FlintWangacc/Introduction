@@ -1,0 +1,8 @@
+(library
+ (name openhashtbl)
+ (modules openhashtbl))
+
+(executable
+ (name test)
+ (modules test)
+ (libraries openhashtbl))
