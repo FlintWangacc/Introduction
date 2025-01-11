@@ -1,0 +1,13 @@
+(library
+ (name bst)
+ (modules bst)
+ (modes byte)
+ (libraries stdlib)
+ (flags (:standard -g)))
+
+(executable
+ (name test)
+ (modules test)
+ (modes byte)
+ (libraries bst stdlib)
+ (flags (:standard -g)))
