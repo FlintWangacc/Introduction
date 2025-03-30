@@ -1,0 +1,4 @@
+(library
+ (name redBlackTree)
+ (modules redBlackTree)
+ (libraries stdlib))
