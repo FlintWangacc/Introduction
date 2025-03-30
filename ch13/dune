@@ -1,0 +1,10 @@
+(library
+ (name redBlackTree)
+ (modules redBlackTree)
+ (libraries stdlib))
+
+(executable
+ (name test)
+ (modules test)
+ (libraries redBlackTree stdlib)
+ (flags (:standard -g)))
