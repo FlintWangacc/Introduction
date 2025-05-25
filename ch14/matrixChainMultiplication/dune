@@ -1,0 +1,4 @@
+(executable
+ (name matrixChain)
+ (flags (:standard -w -27))
+ (libraries base stdio core))
