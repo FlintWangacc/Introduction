@@ -1,0 +1,4 @@
+(executable
+ (name lcs)
+ (flags (:standard -w -27))
+ (libraries base stdio core))
