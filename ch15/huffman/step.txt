@@ -1,0 +1,5 @@
+#require "containers";;
+
+let wl = Readword.read_words "dickens.txt";;
+
+let wsl = Wordlist.map_to_sorted_list (Wordlist.count_words wl);;

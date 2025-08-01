@@ -1,0 +1,17 @@
+(library
+ (name readword)
+ (public_name readword)
+ (libraries stdio)
+ (modules readword))
+
+(library
+ (name wordlist)
+ (libraries readword stdio core)
+ (modules wordlist))
+
+(executable
+ (name huffman)
+ (public_name huffman)
+ (libraries readword wordlist stdio core containers yojson camlzip str)
+ (modules huffman)
+ (flags (:standard -w -3-27-6-32)))

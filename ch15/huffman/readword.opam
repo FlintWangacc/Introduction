@@ -1,0 +1,16 @@
+opam-version: "2.0"
+maintainer: "Your Name <your.email@example.com>"
+authors: ["Your Name"]
+license: "MIT"
+homepage: "https://github.com/FlintWangacc/Introduction.git"
+bug-reports: "https://github.com/FlintWangacc/Introduction/issues"
+dev-repo: "git+https://github.com/FlintWangacc/Introduction.git"
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
+]
+depends: [
+  "ocaml" {>= "4.08.0"}
+  "dune" {>= "3.0"}
+  "core"
+]
