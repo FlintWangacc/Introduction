@@ -1,0 +1,5 @@
+(executable
+ (name graph)  ; This should match your filename (e.g., graph.ml)
+ (libraries stdlib)
+ (flags :standard -w -9-27)
+ (modules graph))
